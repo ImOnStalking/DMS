@@ -1,0 +1,14 @@
+body {
+  color: darkblue;
+  font-family: serif;
+  background-color: aliceblue;
+}
+.signIn{
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+  color: darkblue;
+}
+
