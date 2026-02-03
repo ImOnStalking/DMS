@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responder Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/style.css">
+  </head>
+  <body>
+<!-- nav -->
+<section>
+  <nav class="navbar navbar-expand-lg bg-white" style="height: 74px;">
+    <div class="container-fluid">
+
+      <div class="d-flex align-items-center">
+        <img src="./images/logo.png" alt="logo" width="120" height="100" class="me-">
+        <h4><b>Disaster Supply Matching</b></h4>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav mx-auto text-center">
+          <a class="nav-link" href="homepage.html">Home</a>
+          <a class="nav-link" href="#">Disaster</a>
+          <a class="nav-link" href="#">Supply Request</a>
+          <a class="nav-link" href="#">Donation</a>
+          <a class="nav-link" href="#">Inventory</a>
+          <a class="nav-link" href="#">Contact Us</a>
+        </div>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              User Profile
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="index.html">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+<!-- nav end -->
+
+<!-- Dashboard Content -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="mb-4" style="color: darkblue;">Disaster Report</h2>
+        <form>
+          <div class="mb-3">
+            <label for="disasterType" class="form-label">Type of Disaster</label>
+            <input type="text" class="form-control" id="disasterType" placeholder="e.g., Typhoon, Earthquake, Flood, Fire">
+          </div>
+          <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" class="form-control" id="location" placeholder="Barangay, Municipality/City, Province">
+          </div>
+          <div class="mb-3">
+            <label for="dateTime" class="form-label">Date & Time of Incident</label>
+            <input type="datetime-local" class="form-control" id="dateTime">
+          </div>
+          <div class="mb-3">
+            <label for="reportingOffice" class="form-label">Reporting Office</label>
+            <input type="text" class="form-control" id="reportingOffice" placeholder="e.g., Barangay DRRM, MDRRMO, School">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Affected Population</label>
+            <br>
+            <label for="Numberoffamilies">Number of Families Affected:</label>
+            <input type="number" id="Numberoffamilies" class="mb-2" width="10px">
+            <br>
+            <label for="Numberofperson">Number of Persons Affected:</label>
+            <input type="number" id="Numberofperson">
+            <br>
+            <label for="affectedPopulation" class="form-label">Casualties</label>
+            <textarea class="form-control" id="affectedPopulation" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="currentNeeds" class="form-label">Current Needs / Issues</label>
+            <textarea class="form-control" id="currentNeeds" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="preparedBy" class="form-label">Prepared by</label>
+            <input type="text" placeholder="Name"> 
+            <input type="text" placeholder="Position">
+            <input type="text" placeholder="Office">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Disaster Supply Matching</h5>
+        <p>Helping communities recover faster through efficient supply distribution.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <h5>Contact Us</h5>
+        <p>Email: info@disastersupplymatching.com<br>Phone: (123) 456-7890</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-12 text-center">
+        <p>&copy; 2023 Disaster Supply Matching. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
