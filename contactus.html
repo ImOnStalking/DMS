@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Disaster Supply Matching</title>
+    <title>Contact Us - Disaster Supply Matching</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="Css/style.css">
@@ -16,17 +16,16 @@
 
       <div class="d-flex align-items-center">
         <img src="./images/logo.png" alt="logo" width="120" height="100" class="me-3">
-         <h4 onclick="window.location.href='homepage.html'"><b>Disaster Supply Matching</b></h4>
+        <h4 onclick="window.location.href='homepage.html'"><b>Disaster Supply Matching</b></h4>
       </div>
-
 
 <!-- middle nav section-->
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav mx-auto text-center">
           <a class="nav-link" href="homepage.html">Home</a>
-          <a class="nav-link active" href="disasterpage.html">Donation</a>
+          <a class="nav-link" href="disasterpage.html">Donation</a>
           <a class="nav-link" href="inventory.html">Inventory</a>
-          <a class="nav-link" href="contactus.html">Contact Us</a>
+          <a class="nav-link active" href="contactus.html">Contact Us</a>
         </div>
 
         <!-- notification section -->
@@ -36,18 +35,14 @@
             <i class="bi bi-bell"></i>
           </button>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown" style="max-height: 400px; overflow-y: auto;">
-            
-            <!-- Donation Notifications Section -->
+            <li><h6 class="dropdown-header">Notifications</h6></li>
+            <li> <hr class="dropdown-divider"></li>
             <li><h6 class="dropdown-header">Donations</h6></li>
-            <li><a class="dropdown-item" href="#"><small>Your donated supplies have been <span style="color: green;">accepted!</span></small></a></li>
-            <li><a class="dropdown-item" href="#"><small>Your donated supplies have been <span style="color: red;">rejected!</span></small></a></li>
-            
+          
             <li><hr class="dropdown-divider"></li>
             
             <!-- Request Notifications Section -->
             <li><h6 class="dropdown-header">Requests</h6></li>
-            <li><a class="dropdown-item" href="#"><small>Your request has been <span style="color: green;">accepted!</span></small></a></li>
-            <li><a class="dropdown-item" href="#"><small>Your request has been <span style="color: red;">rejected!</span></small></a></li>
             
           </ul>
         </li>
@@ -71,52 +66,93 @@
   </nav>
 </section>
 
-<!-- content Section -->
+<!-- Intro Section -->
 <section class="py-5">
-    <div class="container">
-    <h2 class="text-center mb-4">Disasters</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mb-4" style="color: darkblue;">Contact Us</h1>
+        <p class="lead">If you have questions about donations, relief operations, or partnerships, feel free to reach out.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Information Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="mb-4" style="color: darkblue;">Get In Touch</h2>
+        <h5>Disaster Supply Matching</h5>
+        <p><strong>Email:</strong> info@disastersupplymatching.com</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Address:</strong> 123 Relief Street, Aid City, AC 12345</p>
+      </div>
+      <div class="col-lg-6">
+        <h3>Send Us a Message</h3>
+        <form>
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <select class="form-select" id="subject" required>
+              <option value="">Choose...</option>
+              <option value="donation">Donation</option>
+              <option value="volunteering">Volunteering</option>
+              <option value="partnership">Partnership</option>
+              <option value="others">Others</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+
+<!-- Additional Info Section -->
+<section>
+    <div class="container py-5">
         <div class="row">
             <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <img src="images/fire.png" class="card-img-top" width="10px" height="300px">
+            <div>
               <div class="card-body">
-                <h5 class="card-title">FIRE IN COTABATO</h5>
-                <p class="card-text">A fire recently affected a residential area in Cotabato, leaving several families displaced and in need of immediate support. 
-                    Many lost their homes and basic necessities, making daily survival difficult.
-                    We are asking for donations to help provide food, clothing, and essential supplies for the affected families.</p>
-                <a href="donordash.html" class="btn btn-primary">Donate</a>
-              </div>
+                <h3 class="card-title text-center" style="color: darkblue;">Donation & Relief Inquiries</h3>
+                <p class="card-text text-center" style="font-size: 20px; color: blue;">We assure you that your concerns matter. Whether it's donation verification, coordinating in-kind donations, or questions about disaster response, we're here to help.</p>
+                </div>
             </div>
           </div>
 
           <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <img src="images/earthquake.png" class="card-img-top" width="10px" height="300px">
+            <div>
               <div class="card-body">
-                <h5 class="card-title">Earthquake in Manila</h5>
-                <p class="card-text">A strong earthquake recently struck Manila, affecting many families and causing damage to homes and essential infrastructure. 
-                    Several residents were displaced and are now in need of urgent assistance for food, water, and shelter.
-                    We are calling for donations to help support the affected families as they recover and rebuild.</p>
-                <a href="donordash.html" class="btn btn-primary">Donate</a>
-              </div>
+                <h3 class="card-title text-center" style="color: darkblue;">Important Notice</h3>
+                <p class="card-text text-center" style="font-size: 20px; color: blue;">For emergencies, please contact local authorities or hotlines immediately.</p>
+            </div>
             </div>
           </div>
 
           <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <img src="images/typhoon.png" class="card-img-top" width="10px" height="300px">
+            <div>
               <div class="card-body">
-                <h5 class="card-title">Typhoon Yolanda</h5>
-                <p class="card-text">Typhoon Yolanda caused massive destruction, leaving thousands of families without homes, livelihoods, and basic necessities. 
-                    Many communities were severely affected and continue to need support for recovery and rebuilding. 
-                    We are seeking donations to help provide food, shelter, and essential aid to families impacted by the typhoon.</p>
-                <a href="donordash.html" class="btn btn-primary">Donate</a>
-              </div>
+                <h3 class="card-title" style="color: darkblue;">Trust & Transparency</h3>
+                <p class="card-text" style="font-size: 20px; color: blue;"> We value transparency and respond to all legitimate inquiries as quickly as possible.</p> </div>
             </div>
           </div>
         </div>
     </div>
-    
 </section>
 
 <!-- Footer -->
