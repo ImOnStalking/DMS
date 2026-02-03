@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inventory</title>
+    <title>Disaster Supply Matching</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="Css/style.css">
@@ -19,6 +19,7 @@
         <h4><b>Disaster Supply Matching</b></h4>
       </div>
 
+
 <!-- middle nav section-->
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav mx-auto text-center">
@@ -32,19 +33,32 @@
 
         <!-- notification section -->
        <ul class="navbar-nav ms-auto">
-          <li class="nav-item dropdown me-3">
-            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-bell"></i>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown">
-              <li><a class="dropdown-item" href="#"><small>Inventory updated!</small></a></li>
-            </ul>
-          </li>
+        <li class="nav-item dropdown me-3">
+          <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-bell"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown" style="max-height: 400px; overflow-y: auto;">
+            
+            <!-- Donation Notifications Section -->
+            <li><h6 class="dropdown-header">Donations</h6></li>
+            <li><a class="dropdown-item" href="#"><small>Your donated supplies have been <span style="color: green;">accepted!</span></small></a></li>
+            <li><a class="dropdown-item" href="#"><small>Your donated supplies have been <span style="color: red;">rejected!</span></small></a></li>
+            
+            <li><hr class="dropdown-divider"></li>
+            
+            <!-- Request Notifications Section -->
+            <li><h6 class="dropdown-header">Requests</h6></li>
+            <li><a class="dropdown-item" href="#"><small>Your request has been <span style="color: green;">accepted!</span></small></a></li>
+            <li><a class="dropdown-item" href="#"><small>Your request has been <span style="color: red;">rejected!</span></small></a></li>
+            
+          </ul>
+        </li>
+       
 
         <!-- user profile section -->
-
+       
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               User Profile
             </a>
             <ul class="dropdown-menu dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
@@ -59,61 +73,39 @@
   </nav>
 </section>
 
-<!-- Inventory Management Section -->
-<section class="py-5">
+<!-- Hero Section -->
+<section class="hero bg-primary text-white py-5">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2 class="mb-4" style="color: darkblue;">Inventory</h2>
-        <div class="table-responsive">
-          <table class="table table-striped table-bordered">
-            <thead class="table-dark">
-              <tr>
-                <th>Item Name</th>
-                <th>Category</th>
-                <th>Quantity</th>
-                <th>Condition</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Water Bottles</td>
-                <td>Beverages</td>
-                <td>500</td>
-                <td>New</td>
-              </tr>
-              <tr>
-                <td>Blankets</td>
-                <td>Clothing</td>
-                <td>200</td>
-                <td>New</td>
-              </tr>
-              <tr>
-                <td>First Aid Kits</td>
-                <td>Medical</td>
-                <td>50</td>
-                <td>New</td>
-              </tr>
-              <tr>
-                <td>Canned Food</td>
-                <td>Food</td>
-                <td>300</td>
-                <td>New</td>
-              </tr>
-              <tr>
-                <td>Clothing Sets</td>
-                <td>Clothing</td>
-                <td>150</td>
-                <td>Used</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1 class="display-4 fw-bold">Welcome (USER)</h1>
+        <p class="lead">Connecting donors, responders, and those in need during disasters. Efficiently match supplies to where they're needed most.</p>
+        <a href="#about" class="btn btn-light btn-lg">Learn More</a>
+      </div>
+      <div class="col-lg-6">
+        <img src="./images/logo.png" alt="Disaster Supply Matching Logo" class="img-fluid">
       </div>
     </div>
   </div>
 </section>
 
+<section class="py-5">
+    <div class="container">
+    <h2 class="text-center mb-4">Disasters</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img src="images/fire.png" class="card-img-top" width="10px" height="300px">
+              <div class="card-body">
+                <h5 class="card-title">John Wick Chapter 2</h5>
+                <p class="card-text">A high-octane chase through a post-apocalyptic wasteland.</p>
+                <a href="donordash.html" class="btn btn-primary">Donate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
 
 <!-- Footer -->
 <footer class="bg-dark text-white py-5 fixed-footer">

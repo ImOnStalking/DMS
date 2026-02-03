@@ -47,7 +47,7 @@
 
 <!-- nav end -->
 
-<!-- Dashboard Content -->
+<!-- main contnent -->
 <section class="py-5">
   <div class="container">
     <div class="row">
@@ -99,11 +99,7 @@
               <option value="damaged">Damaged</option>
             </select>
           </div>
-          <h4>Date & Mode of Donation</h4>
-          <div class="mb-3">
-            <label for="dateDonated" class="form-label">Date Donated</label>
-            <input type="date" class="form-control" id="dateDonated">
-          </div>
+          <h4>Mode of Donation</h4>
           <div class="mb-3">
             <label class="form-label">Mode:</label>
             <div class="form-check">
@@ -125,15 +121,34 @@
               </label>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#donationModal">Submit</button>
         </form>
       </div>
     </div>
   </div>
 </section>
 
+<!-- modal -->
+<div class="modal fade" tabindex="-1" id="donationModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Donation Submitted</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Your donation has been submitted successfully. Thank you for your contribution!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Footer -->
-<footer class="bg-dark text-white py-4">
+<footer class="bg-dark text-white fixed-footer">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
