@@ -1,15 +1,16 @@
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>donitaion page</title>
+    <title>Disaster Supply Matching</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="Css/style.css">
   </head>
   <body>
-
+<!-- start of nav section-->
 <section>
   <nav class="navbar navbar-expand-lg bg-white" style="height: 74px;">
     <div class="container-fluid">
@@ -23,11 +24,10 @@
 <!-- middle nav section-->
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav mx-auto text-center">
-          <a class="nav-link" href="homepage.html">Home</a>
-          <a class="nav-link active" href="disasterpage.html">Donate</a>
-          <a class="nav-link" href="donationHistory.html">Donation History</a>
-          <a class="nav-link" href="contactus.html">Contact Us</a>
-          <a class="nav-link" href="About_us.html">About Us</a>
+          <a class="nav-link active" href="homepage_admin.html">Home</a>
+          <a class="nav-link" href="Report_admin.html">Reports</a>
+          <a class="nav-link" href="inventory_admin.html">Inventory</a>
+          <a class="nav-link" href="DEM.html">DEM</a>
         </div>
 
         <!-- notification section -->
@@ -50,7 +50,7 @@
        
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              User Profile
+              Admin
             </a>
             <ul class="dropdown-menu dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -64,52 +64,69 @@
   </nav>
 </section>
 
-<!-- content Section -->
-<section class="py-5">
-    <div class="container">
-    <h2 class="text-center mb-4">Donate</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <img src="images/fire.png" class="card-img-top" width="10px" height="300px">
-              <div class="card-body">
-                <h5 class="card-title">FIRE IN COTABATO</h5>
-                <p class="card-text">A fire recently affected a residential area in Cotabato, leaving several families displaced and in need of immediate support. 
-                    Many lost their homes and basic necessities, making daily survival difficult.
-                    We are asking for donations to help provide food, clothing, and essential supplies for the affected families.</p>
-                <a href="donordash.html" class="btn btn-primary">Donate</a>
-              </div>
-            </div>
-          </div>
+<!-- Hero Section -->
+<section class="hero bg-primary text-white py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1 class="display-4 fw-bold">Welcome Admin</h1>
+        <p class="lead">Always Check Notifications!</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="./images/logo.png" alt="Disaster Supply Matching Logo" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
 
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <img src="images/earthquake.png" class="card-img-top" width="10px" height="300px">
-              <div class="card-body">
-                <h5 class="card-title">Earthquake in Manila</h5>
-                <p class="card-text">A strong earthquake recently struck Manila, affecting many families and causing damage to homes and essential infrastructure. 
-                    Several residents were displaced and are now in need of urgent assistance for food, water, and shelter.
-                    We are calling for donations to help support the affected families as they recover and rebuild.</p>
-                <a href="donordash.html" class="btn btn-primary">Donate</a>
-              </div>
-            </div>
-          </div>
+<!-- About Us Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="mb-4" style="color: darkblue;">About Us</h2>
+        <p class="lead">Disaster Supply Matching is a platform dedicated to streamlining the distribution of essential supplies during natural disasters and emergencies. 
+          We bridge the gap between generous donors and frontline responders to ensure aid reaches those who need it quickly and efficiently.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <img src="images/typhoon.png" class="card-img-top" width="10px" height="300px">
-              <div class="card-body">
-                <h5 class="card-title">Typhoon Yolanda</h5>
-                <p class="card-text">Typhoon Yolanda caused massive destruction, leaving thousands of families without homes, livelihoods, and basic necessities. 
-                    Many communities were severely affected and continue to need support for recovery and rebuilding. 
-                    We are seeking donations to help provide food, shelter, and essential aid to families impacted by the typhoon.</p>
-                <a href="donordash.html" class="btn btn-primary">Donate</a>
-              </div>
-            </div>
+<!-- Key Features Section -->
+<section class="bg-light py-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-12">
+        <h2 class="mb-4" style="color: darkblue;">Key Features</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow">
+          <div class="card-body">
+            <h5 class="card-title" style="color: darkblue;">Supply Requests</h5>
+            <p class="card-text">Responders can submit detailed requests for supplies needed in disaster zones, specifying quantities and priorities.</p>
           </div>
         </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow">
+          <div class="card-body">
+            <h5 class="card-title" style="color: darkblue;">Donations</h5>
+            <p class="card-text">Donors can easily contribute supplies or funds, with real-time tracking of their impact on relief efforts.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow">
+          <div class="card-body">
+            <h5 class="card-title" style="color: darkblue;">Inventory Management</h5>
+            <p class="card-text">Comprehensive tracking of available supplies, ensuring optimal allocation and reducing waste during crises.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    
+  </div>
 </section>
 
 <!-- Footer -->

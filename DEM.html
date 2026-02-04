@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Event Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Css/style.css">
+
+</head>
+<body class="mt-5 ">
+<!-- start of nav section-->
+<section>
+  <nav class="navbar navbar-expand-lg bg-white" style="height: 74px;">
+    <div class="container-fluid">
+
+      <div class="d-flex align-items-center">
+        <img src="./images/logo.png" alt="logo" width="120" height="100" class="me-3">
+         <h4 onclick="window.location.href='homepage.html'"><b>Disaster Supply Matching</b></h4>
+      </div>
+
+
+<!-- middle nav section-->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav mx-auto text-center">
+            <a class="nav-link" href="homepage_admin.html">Home</a>
+            <a class="nav-link" href="Report_admin.html">Reports</a>
+            <a class="nav-link" href="inventory_admin.html">Inventory</a>
+            <a class="nav-link active" href="DEM.html">DEM</a>
+        </div>
+
+        <!-- notification section -->
+       <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown me-3">
+          <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-bell"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown" style="max-height: 400px; overflow-y: auto;">
+            
+            <!-- Donation Notifications Section -->
+            <li><h6 class="dropdown-header">notification</h6></li>
+            <li><a class="dropdown-item" href="#"><small>Your donated supplies have been <span style="color: green;">accepted!</span></small></a></li>
+            <li><a class="dropdown-item" href="#"><small>Your donated supplies have been <span style="color: red;">rejected!</span></small></a></li>
+            
+          </ul>
+        </li>
+       
+
+        <!-- user profile section -->
+       
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              User Profile
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="index.html">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+<!-- end of nav section-->
+
+<section id="MAPP">
+ <div class="text-center bg-primary py-3">
+  <h1 style="color: white;">Disaster Event Management</h1>
+  <p style="font-size: 20px; color: white;">Active Disaster Event</p>
+  </div>
+</div>
+    
+    
+    <!-- Map Display -->
+    <div class="map">
+      <iframe id="mapFrame"
+        src="https://www.google.com/maps?q=Manila,Philippines&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+</section>
+    <!-- Disaster Details -->
+    <div class="row align-items-start justify-content-center mt-4 mb-5">
+    <div class="details">
+      <h3>Disaster Details</h3>
+      <p><strong>Type:</strong> Earthquake</p>
+      <p><strong>Affected Area:</strong> Manila City</p>
+      <p><strong>Severity Level:</strong> High</p>
+      <p><strong>Start Date:</strong> February 3, 2026, 01:06:05</p>
+      <p><strong>Disaster Status:</strong><span style="color: green;"> Inactive</span></p>
+      <p><strong>Request Status:</strong><span style="color: green;"> Done</span></p>
+      <div class="controls">
+        <button class="btn btn-primary " onclick="window.location.href='#MAPP'"  data-lat="14.5995" data-lng="120.9842">Check Map</button>
+      </div>
+      </div>
+
+       <div class="details">
+      <h3>Disaster Details</h3>
+      <p><strong>Type:</strong> Typhoon</p>
+      <p><strong>Affected Area:</strong> Baguio City</p>
+      <p><strong>Severity Level:</strong>Low</p>
+      <p><strong>Start Date:</strong> November 12, 2025</p>
+      <p><strong>Disaster Status:</strong><span style="color: red;"> Active</span></p>
+      <p><strong>Request Status:</strong><span style="color: orange;"> Waiting</span></p>
+      <div class="controls">
+        <button class="btn btn-primary" onclick="window.location.href='#MAPP'" data-lat="10.3157" data-lng="123.8854">Check Map</button> 
+      </div>
+      </div>
+
+       <div class="details">
+      <h3>Disaster Details</h3>
+      <p><strong>Type:</strong>Flood</p>
+      <p><strong>Affected Area:</strong>Tacloban</p>
+      <p><strong>Severity Level:</strong>Medium</p>
+      <p><strong>Start Date:</strong> November 12, 2025</p>
+      <p><strong>Disaster Status:</strong><span style="color: red;"> Active</span></p>
+      <p><strong>Request Status:</strong><span style="color: orange;"> Waiting</span></p>
+       <div class="controls">
+        <button class="btn btn-primary" onclick="window.location.href='#MAPP'" data-lat="10.3157" data-lng="123.8854">Check Map</button> 
+        </div>
+      </div>
+
+    <div class="details">
+      <h3>Disaster Details</h3>
+      <p><strong>Type:</strong>Typhoon</p>
+      <p><strong>Affected Area:</strong>Bontoc</p>
+      <p><strong>Severity Level:</strong>Medium</p>
+      <p><strong>Start Date:</strong> November 12, 2025</p>
+      <p><strong>Disaster Status:</strong><span style="color: red;"> Active</span></p>
+      <p><strong>Request Status:</strong><span style="color: orange;"> Waiting</span></p>
+       <div class="controls">
+        <button class="btn btn-primary" onclick="window.location.href='#MAPP'" data-lat="17.0913" data-lng="121.0106">Check Map</button> 
+      </div>
+    </div>
+</div>
+
+  <!-- Footer -->
+<footer class="bg-dark text-white py-5 fixed-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Disaster Supply Matching</h5>
+        <p>Helping communities recover faster through efficient supply distribution.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <h5>Contact Us</h5>
+        <p>Email: info@disastersupplymatching.com<br>Phone: (123) 456-7890</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-12 text-center">
+        <p>&copy; 2023 Disaster Supply Matching. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="js/scirpt.js"></script>
+</body>
+</html>

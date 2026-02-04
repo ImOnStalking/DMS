@@ -21,7 +21,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav mx-auto text-center">
           <a class="nav-link" href="homepage.html">Home</a>
-          <a class="nav-link" href="#">Supply Request</a>
+          <a class="nav-link" href="request.html">Supply Request</a>
           <a class="nav-link" href="contactus.html">Contact Us</a>
           <a class="nav-link" href="About_us.html">About Us</a>
         </div>
@@ -63,33 +63,48 @@
             <label for="dateTime" class="form-label">Date & Time of Incident</label>
             <input type="datetime-local" class="form-control" id="dateTime">
           </div>
-          <div class="mb-3">
+          <div>
             <label for="reportingOffice" class="form-label">Reporting Office</label>
             <input type="text" class="form-control" id="reportingOffice" placeholder="e.g., Barangay DRRM, MDRRMO, School">
           </div>
-          <div class="mb-3">
-            <label class="form-label">Affected Population</label>
-            <br>
-            <label for="Numberoffamilies">Number of Families Affected:</label>
-            <input type="number" id="Numberoffamilies" class="mb-2" width="10px">
-            <br>
-            <label for="Numberofperson">Number of Persons Affected:</label>
-            <input type="number" id="Numberofperson">
-            <br>
-            <label for="affectedPopulation" class="form-label">Casualties</label>
-            <textarea class="form-control" id="affectedPopulation" rows="3"></textarea>
+
+          <label class="py-3" for="Level">Level of Urgency:</label>
+          <select id="Level" name="Level">
+            <option value="" disabled selected>Choose an option</option>
+            <option value="low" style="color: black;">Low/Not Urgent</option>
+            <option value="low-medium" style="color: blue;">Low/Medium</option>
+            <option value="medium-high" style="color: orange;">Medium/High </option>
+            <option value="high-urgent" style="color: red;">High/Urgent</option>
+          </select>
+          <hr>
+          <div class="mb-1">
+            <label for="currentNeeds" class="form-label">Current Needs</label>
+           </div>
+           <div class="mb-3">
+            <label for="type">Type:</label>
+          <select id="type" name="type">
+              <option value="" disabled selected>Choose an option</option>
+              <option value="food">Food</option>
+              <option value="clothes">Clothes</option>
+              <option value="medicine">Medicine</option>
+              <option value="books">Books</option>
+              <option value="toys">Toys</option>
+              <option value="money">Money</option>
+              <option value="other">Other</option>
+          </select>
+          <p class="mt-2">Others
+          <input type="text" class="form-control" id="other" placeholder="Write here" >
+          </p>
+          <p class="mt-2">Quantity/Amount
+          <input type="text" class="form-control" id="quantity" style="width: 200px;" >
+          </p>
+          <p class="mt-2">Additional Notes
+          <input type="text" class="form-control" id="notes" placeholder="Write here" >
           </div>
-          <div class="mb-3">
-            <label for="currentNeeds" class="form-label">Current Needs / Issues</label>
-            <textarea class="form-control" id="currentNeeds" rows="3"></textarea>
+          <div>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
-          <div class="mb-3">
-            <label for="preparedBy" class="form-label">Prepared by</label>
-            <input type="text" placeholder="Name"> 
-            <input type="text" placeholder="Position">
-            <input type="text" placeholder="Office">
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+
         </form>
       </div>
     </div>
