@@ -26,24 +26,29 @@
           <a class="nav-link" href="homepage_admin.html">Home</a>
           <a class="nav-link active" href="Report_admin.html">Reports</a>
           <a class="nav-link" href="inventory_admin.html">Inventory</a>
+          <a class="nav-link" href="delivery_admin.html">Delivery</a>
           <a class="nav-link" href="DEM.html">DEM</a>
         </div>
 
-        <!-- notification section -->
+         <!-- notification section -->
        <ul class="navbar-nav ms-auto">
-        <li class="nav-item dropdown me-3">
-          <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-bell"></i>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown" style="max-height: 400px; overflow-y: auto;">
-            
-            <!-- Donation Notifications Section -->
-            <li><h6 class="dropdown-header">Donations</h6></li>
-            <li><a class="dropdown-item" href="donationHistory.html"><small>Your donated supplies have been <span class="Matched">Matched</span></small></a></li>
-            <li><a class="dropdown-item" href="donationHistory.html"><small>Your donated supplies is <span class="Pending">Pending</span></small></a></li>
-          </ul>
-        </li>
-       
+          <li class="nav-item dropdown me-3">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-bell"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown">
+              <li class="dropdown-header">Important Notice!</li>
+              <li><a class="dropdown-item" href="inventory_admin.html#inventory_item"><small>Books is <span class="Dangering">LOW</span> in Supplies!</small></a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="dropdown-header">Notice</li>
+              <li><a class="dropdown-item" href="inventory_admin.html#added_supplies"><small>A Donation has been <span class="Matched">Recived</span></small></a></li>
+              <li><a class="dropdown-item" href="Report_admin.html#Match_request"><small>A Match is <span class="Matched">Found</span> in Supplies!</small></a></li>
+              <li><a class="dropdown-item" href="Report_admin.html#delivery_confirmation"><small>A Delivery has been <span class="Fulfilled">Accepted</span></small></a></li>
+              <li><a class="dropdown-item" href="inventory_admin.html#Canceled_supplies"><small>A Donor has <span class="Dangering">Canceled</span> a Donation</small></a></li>
+
+            </ul>
+          </li>
+
 
         <!-- user profile section -->
        
@@ -70,11 +75,11 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="mb-4" style="color: darkblue;">Reporting and Analytics</h2>
-        <p class="lead">Comprehensive reports on matched and unmet requests, donation utilization, and response times.</p>
-      </div>
+            </div>
     </div>
 
     <!-- Matched and Unmet Requests Report -->
+    <section id="Match_request">
     <div class="row mb-5">
       <div class="col-lg-12">
         <div class="card border-0 shadow">
@@ -130,7 +135,7 @@
         </div>
       </div>
     </div>
-
+</section>
     <!-- Donation Utilization Report -->
     <div class="row mb-5">
       <div class="col-lg-12">
@@ -242,6 +247,7 @@
     </div>
 
     <!-- Delivery Confirmation Report -->
+     <section id="delivery_confirmation" >
     <div class="row mb-5">
       <div class="col-lg-12">
         <div class="card border-0 shadow">

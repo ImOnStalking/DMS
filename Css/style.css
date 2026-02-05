@@ -4,7 +4,7 @@ body {
   background-color: aliceblue;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 80px;
   margin: 0;
   overflow-x: hidden;
 }
@@ -46,8 +46,12 @@ body {
 .Pending {
   color: orange;
   font-weight: bold;
-
 }
+.Dangering {
+  color: red;
+  font-weight: bold;
+}
+
 /* DEM */
     .containered {
       display: flex;
@@ -79,3 +83,39 @@ body {
       padding: 10px;
     }
 /* DEM */
+
+/* inventory */
+.photo-container {
+  position: relative;
+  display: inline-block;
+  background-color: rgba(109, 109, 109, 0.432);
+  border-radius: 10%;
+}
+
+.photo-container img {
+  width: 200px; 
+  height: auto;
+  background-color: rgba(109, 109, 109, 0.432);
+  border-radius: 10%;
+}
+
+.number {
+  position: absolute;
+  top: 70%;
+  left: 70px;
+  background: darkgreen;
+  color: white;
+  font-weight: bold;  
+  padding: 6px 10px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.name {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+/* inventory */
