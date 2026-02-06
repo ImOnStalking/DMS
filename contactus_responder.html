@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Css/style.css">
+  </head>
+  <body>
+
+<!-- start of nav section-->
+<section>
+  <nav class="navbar navbar-expand-lg bg-white" style="height: 74px;">
+    <div class="container-fluid">
+
+      <div class="d-flex align-items-center">
+        <img src="./images/logo.png" alt="logo" width="120" height="100" class="me-3">
+         <h4 onclick="window.location.href='homepage.html'"><b>Disaster Supply Matching</b></h4>
+      </div>
+
+
+<!-- middle nav section-->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav mx-auto text-center">
+          <a class="nav-link" href="homepage_responder.html">Home</a>
+          <a class="nav-link" href="request.html">Requested</a>
+          <a class="nav-link" href="Responders_delivery.html">Delivery</a>
+          <a class="nav-link active" href="contactus_responder.html">Contact Us</a>
+          <a class="nav-link" href="About_us_responder.html">About Us</a>
+        </div>
+
+ <!-- notification section -->
+       <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown me-3">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-bell"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown">
+              <li class="dropdown-header">Notice</li>
+              <li><a class="dropdown-item" href="inventory_admin.html#added_supplies"><small>A Request is <span class="Pending">Pending</span></small></a></li>
+              <li><a class="dropdown-item" href="Report_admin.html#Match_request"><small>A Request is <span class="Dangering">Incoming</span></small></a></li>
+              <li><a class="dropdown-item" href="Report_admin.html#delivery_confirmation"><small>A Request have been <span class="Fulfilled">Delivered</span></small></a></li>
+              <li><a class="dropdown-item" href="inventory_admin.html#Canceled_supplies"><small>A Request is <span style="color: rgb(175, 175, 0); font-weight: bold;">In Transit</span></small></a></li>
+
+            </ul>
+          </li>
+
+       
+
+        <!-- user profile section -->
+       
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              User Profile
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="index.html">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+
+<!-- Intro Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mb-4" style="color: darkblue;">Contact Us</h1>
+        <p class="lead">If you have questions about donations, relief operations, or partnerships, feel free to reach out.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- Contact Information Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="mb-4" style="color: darkblue;">Get In Touch</h2>
+        <h5>Disaster Supply Matching</h5>
+        <p><strong>Email:</strong> info@disastersupplymatching.com</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Address:</strong> 123 Relief Street, Aid City, AC 12345</p>
+      </div>
+      <div class="col-lg-6">
+        <h3>Send Us a Message</h3>
+        <form>
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <select class="form-select" id="subject" required>
+              <option value="">Choose...</option>
+              <option value="donation">Donation</option>
+              <option value="volunteering">Volunteering</option>
+              <option value="partnership">Partnership</option>
+              <option value="others">Others</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submitmess">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+
+
+
+<!-- Additional Info Section -->
+<section>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+            <div>
+              <div class="card-body">
+                <h3 class="card-title text-center" style="color: darkblue;">Donation & Relief Inquiries</h3>
+                <p class="card-text text-center" style="font-size: 20px; color: blue;">We assure you that your concerns matter. Whether it's donation verification, coordinating in-kind donations, or questions about disaster response, we're here to help.</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 border-end border-start border-dark">
+            <div>
+              <div class="card-body">
+                <h3 class="card-title text-center" style="color: darkblue;">Important Notice</h3>
+                <p class="card-text text-center" style="font-size: 20px; color: blue;">For emergencies, please contact local authorities or hotlines immediately.</p>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div>
+              <div class="card-body">
+                <h3 class="card-title text-center" style="color: darkblue;">Trust & Transparency</h3>
+                <p class="card-text text-center" style="font-size: 20px; color: blue;"> We value transparency and respond to all legitimate inquiries as quickly as possible.</p> </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+            <!--Modal-->
+              <div class="modal fade" id="submitmess" tabindex="-1" aria-labelledby="submitmessLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="submitmessLabel">Message Submitted</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Your message has been submitted successfully. We will get back to you soon.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">back</button>
+                      <button type="button" class="btn btn-primary" onclick="window.location.href='homepage.html'">Go to Home</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Modal end-->
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-5 fixed-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Disaster Supply Matching</h5>
+        <p>Helping communities recover faster through efficient supply distribution.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <h5>Contact Us</h5>
+        <p>Email: info@disastersupplymatching.com<br>Phone: (123) 456-7890</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-12 text-center">
+        <p>&copy; 2023 Disaster Supply Matching. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

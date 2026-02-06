@@ -8,31 +8,53 @@
     <link rel="stylesheet" href="Css/style.css">
   </head>
   <body>
-<!-- nav -->
+<!-- start of nav section-->
 <section>
   <nav class="navbar navbar-expand-lg bg-white" style="height: 74px;">
     <div class="container-fluid">
 
       <div class="d-flex align-items-center">
-        <img src="./images/logo.png" alt="logo" width="120" height="100" class="me-">
-        <h4><b>Disaster Supply Matching</b></h4>
+        <img src="./images/logo.png" alt="logo" width="120" height="100" class="me-3">
+         <h4 onclick="window.location.href='homepage.html'"><b>Disaster Supply Matching</b></h4>
       </div>
 
+
+<!-- middle nav section-->
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav mx-auto text-center">
-          <a class="nav-link" href="homepage.html">Home</a>
-          <a class="nav-link" href="request.html">Supply Request</a>
-          <a class="nav-link" href="contactus.html">Contact Us</a>
-          <a class="nav-link" href="About_us.html">About Us</a>
+          <a class="nav-link" href="homepage_responder.html">Home</a>
+          <a class="nav-link active" href="request.html">Requested</a>
+          <a class="nav-link" href="Responders_delivery.html">Delivery</a>
+          <a class="nav-link" href="contactus_responder.html">Contact Us</a>
+          <a class="nav-link" href="About_us_responder.html">About Us</a>
         </div>
-        <ul class="navbar-nav ms-auto">
+
+ <!-- notification section -->
+       <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown me-3">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-bell"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown">
+              <li class="dropdown-header">Notice</li>
+              <li><a class="dropdown-item" href="inventory_admin.html#added_supplies"><small>A Request is <span class="Pending">Pending</span></small></a></li>
+              <li><a class="dropdown-item" href="Report_admin.html#Match_request"><small>A Request is <span class="Dangering">Incoming</span></small></a></li>
+              <li><a class="dropdown-item" href="Report_admin.html#delivery_confirmation"><small>A Request have been <span class="Fulfilled">Delivered</span></small></a></li>
+              <li><a class="dropdown-item" href="inventory_admin.html#Canceled_supplies"><small>A Request is <span style="color: rgb(175, 175, 0); font-weight: bold;">In Transit</span></small></a></li>
+
+            </ul>
+          </li>
+
+       
+
+        <!-- user profile section -->
+       
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              User Profile
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Admin
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="index.html">Logout</a></li>
             </ul>
@@ -42,7 +64,7 @@
     </div>
   </nav>
 </section>
-<!-- nav end -->
+
 
 <!-- Dashboard Content -->
 <section class="py-5">
@@ -102,7 +124,7 @@
           <input type="text" class="form-control" id="notes" placeholder="Write here" >
           </div>
           <div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#requestModal">Submit</button>
           </div>
 
         </form>
@@ -110,6 +132,25 @@
     </div>
   </div>
 </section>
+
+<!-- modal -->
+<div class="modal fade" tabindex="-1" id="requestModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Request Submitted</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Your request <span class="Fulfilled">ID-4</span> has been submitted successfully.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="window.location.href='request.html'">OK</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Footer -->
 <footer class="bg-dark text-white fixed-footer">
